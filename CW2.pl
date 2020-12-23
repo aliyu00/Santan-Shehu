@@ -46,3 +46,15 @@ findall(Z,(train(Z,_,_,_,_,_) ;train(_,Z,_,_,_,_)),CitiesD),
 sort(CitiesD, Cities),
 writeln(Cities), 
 con(X,Dep, V, Arr, Y, Cities).
+
+/*
+2.i ?- direct(london,manchester,[7,8,14,19],5).
+       True
+
+2.ii ?-
+
+2.iii ?- connection(swansea,Dep,V,Arr,munich).
+     V = [via(4, cardiff, 7), via(11, manchester, 11), via(15, london, 17), via(22, paris, 22)]	
+     Dep = 3
+     Arr = 6
+       
