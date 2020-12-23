@@ -177,10 +177,15 @@ has_brother_who_is_granddad(X) :-
         A = georgeV
         
     Question 11. - Who is a cousin of Eugenie
-    
+    ?- cousin (A, Eugiene).
+      A = william
+      A = harry
+      A = peter
+      A = zara
     
     Question 12. - Who has a cousin who is grandma
-    
+       ?- has_cousin_who_is_grandma(harry). 
+          false.
     
     Question 13. - Who has a brother who is a grandfather 
         
